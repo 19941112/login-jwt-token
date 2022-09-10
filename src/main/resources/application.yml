@@ -1,0 +1,29 @@
+
+server:  port: 9508
+  
+jwt:
+  secret: secretkey123
+  
+  
+#  JWT-related
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    jdbcUrl: jdbc:mysql://localhost:3306/login
+#    username: root
+#    password: Gowtham@12  
+  
+  
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/login
+    password: Gowtham@12
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      bootstrap-servers: localhost:9092
+  
