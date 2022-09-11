@@ -29,7 +29,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        return "sample Controller token authenticated test!!";
+        return "sample Controller token authenticated test with Azure!!";
     }
 
     @PostMapping("/authenticate")
